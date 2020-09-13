@@ -61,12 +61,11 @@
 
 
 .a-propos-text {
-  flex-shrink: 0; /* shrinks to 0 to apply 70% width*/
-  flex-basis: 60%; /* sets initial width to 70% */
+  width: 60%
 }
 
 .a-propos-links {
-  flex-basis: 40%;
+  width: 40%;
   margin: 20px;
   margin-left: 60px;
 }
@@ -199,14 +198,23 @@ progress {
 }
 
 @media only screen and (max-width: 900px) {
+
   .flex-container {
       /* it place the items in vertical direction */
     flex-direction: column;
   }
 
   .a-propos-links {
-    width: 100%;
+    width: 90%;
+    margin: 0;
+    margin-left: auto; margin-right: auto;
   }
+
+  .a-propos-text {
+    width: 100%;
+    margin-left: auto; margin-right: auto;
+  }
+
 
   .box {
     margin-top: 40px;
@@ -215,6 +223,13 @@ progress {
 
   #a-propos h1, #skills h1 {
     width: 100%;
+  }
+
+  #skills-graphics {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 12px
+    justify-content: space-around;
   }
 
 }
