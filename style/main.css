@@ -228,8 +228,6 @@ progress {
   #skills-graphics {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 12px
-    justify-content: space-around;
   }
 
 }
