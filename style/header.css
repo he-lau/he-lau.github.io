@@ -70,8 +70,10 @@
 @media only screen and (max-width: 900px) {
 
 
-  body {
-    overflow-y: hidden; /* pour n'avoir qu'une seule scrollbar */
+  html, body {
+    position: relative;
+    height: 100%;
+    overflow: hidden; /* pour n'avoir qu'une seule scrollbar */
   }
 
 
@@ -112,7 +114,9 @@
     background-color: white;
     /* cacher le menu en le déplacant (*-1) vers la gauche*/
     transform: translateX(100%); /* cacher vers la droite */
+    -webkit-transform: translateX(100%);
     z-index: 12;
+    overflow-y: scroll;
   }
 
   #menu-right a {
