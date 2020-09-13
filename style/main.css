@@ -3,6 +3,7 @@
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 987 1156' preserveAspectRatio='none'%3E↩ %3Cdefs%3E↩ %3ClinearGradient id='a' x1='45.884%25' x2='75.767%25' y1='34.875%25' y2='86.694%25'%3E↩ %3Cstop offset='0%25' stop-color='%239D5CFF'/%3E↩ %3Cstop offset='100%25' stop-color='%236D2FCC'/%3E↩ %3C/linearGradient%3E↩ %3ClinearGradient id='b' x1='50%25' x2='43.276%25' y1='93.539%25' y2='-3.604%25'%3E↩ %3Cstop offset='0%25' stop-color='%236D2FCC'/%3E↩ %3Cstop offset='100%25' stop-color='%239D5CFF'/%3E↩ %3C/linearGradient%3E↩ %3C/defs%3E↩ %3Cg fill='none' fill-rule='evenodd'%3E↩ %3Cpath fill='url(%23a)' d='M0 0v634.947c0 98.705 52.093 190.096 137.06 240.466L1108 1451V0H0z' transform='matrix(-1 0 0 1 987 -251)'/%3E↩ %3Cpath fill='url(%23b)' d='M1019.265 837.299L0 1442.12V1523l1019.265-604.821C1121.392 857.578 1184 747.629 1184 628.879V548c0 118.748-62.608 228.698-164.735 289.299' transform='translate(-197 -251)'/%3E↩ %3C/g%3E↩ %3C/svg%3E");
   height: 1156px;
   width: 100%;
+  margin-bottom: 80px;
 }
 
 .welcome {
@@ -14,10 +15,206 @@
 
 .welcome h1 {
   color: white;
-  font-size: 1.8em;
+  font-size: 1.6em;
+}
+
+.main {
+    margin-bottom: 320px;
+    flex: 1 0 auto;
 }
 
 .main section {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  margin-bottom: 120px;
+}
+
+#a-propos {
+  background-color: #fafafa;
+}
+
+#skills h1  {
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+#a-propos h1 {
+  background-color: #fafafa;
+  margin-bottom: 40px;
+}
+
+#skills-graphics {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 12px
+  justify-content: space-around;
+}
+
+.section-container {
   width: 80%;
   margin: auto;
+}
+
+.flex-container {
+  display: flex;
+}
+
+
+.a-propos-text {
+  flex-shrink: 0; /* shrinks to 0 to apply 70% width*/
+  flex-basis: 60%; /* sets initial width to 70% */
+}
+
+.a-propos-links {
+  flex-basis: 40%;
+  margin: 20px;
+  margin-left: 60px;
+}
+
+.box {
+  padding: 22px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.avatar {
+  text-align: center;
+}
+
+.avatar img {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+
+}
+
+hr {
+    color: rgba(0, 0, 0, 0.12);
+    margin-bottom: 32px
+}
+
+.social-links {
+  margin-bottom: 64px;
+}
+
+.social-links img {
+  height: 25px;
+  width: 25px;
+  margin-right: 8px;
+}
+
+.cv {
+  text-align: center;
+  bottom: 0
+}
+
+.cv button {
+  font-size: 1em;
+  cursor:pointer;
+  outline: none;
+  background-color: #fca50f;
+  padding: 12px;
+  padding-left: 24px; padding-right: 24px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.linkedin {
+  margin-bottom: 8px;
+}
+
+.circular-progress-bar {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  z-index: 10;
+}
+
+.circular-progress-bar circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #e0e0e0;
+  stroke-width: 10px;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+
+.circular-progress-bar circle:nth-child(2) {
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+
+.container-graphics:nth-child(1) .circular-progress-bar circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 0.85));
+  stroke: #a24ff0;
+}
+
+.container-graphics:nth-child(2) .circular-progress-bar circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 0.70));
+  stroke: #a24ff0;
+}
+
+.container-graphics:nth-child(3) .circular-progress-bar circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 0.70));
+  stroke: #a24ff0;
+}
+
+.percent  {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.48);
+  z-index: 10;
+}
+
+.percent .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.container-graphics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+progress {
+  grid-column: 1;
+  height: 25px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .flex-container {
+      /* it place the items in vertical direction */
+    flex-direction: column;
+  }
+
+  .a-propos-links {
+    width: 100%;
+  }
+
+  .box {
+    margin-top: 40px;
+    margin-left: auto; margin-right: auto;
+  }
+
+  #a-propos h1, #skills h1 {
+    width: 100%;
+  }
+
 }

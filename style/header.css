@@ -1,26 +1,28 @@
 .header {
   top: 0; left: 0;
-  position: fixed;
+  position: fixed; /* menu fixe lors du scroll */
   width: 100%;
   background-color:  white;
+  z-index: 999;
 }
 
 .header.shadow {
-  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3); /* ombre lors du scroll */
   -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
   box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
 
 #menu {
   width: 100%;
-  height: 100px;
-  line-height: 80px
+  height: 100px; /* hauteur du menu */
+  line-height: 100px /* contenu affiché au "milieu" verticalement */
 }
 
 #menu-left {
-  height: 100px;
-  margin-left: 50px;
   float: left;
+  height: 100px;
+  width: 25%;
+  margin-left: 5%;
 }
 
 #menu-right {
@@ -28,70 +30,74 @@
 }
 
 #logo {
-  width: 200px;
-  height: 80px;
+  width: 50%; /* 1/2 de la largeur de base du logo */
+  height: 100px;
 }
 
 .menu-link {
   text-decoration: none;
   color: grey;
-  padding: 0px;
-  margin: 0 35px;
+  margin: 0 35px; /* espacement entre les liens */
   margin-right: 50px;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 .menu-link:hover {
-  color: #9f4cba;
-  border-bottom: 1px solid #9f4cba;
-  transition: all 0.2s ease-in-out;
+  color: #a24ff0;
+  transition: 0.3s;
 }
 
 .menu-toggle {
-  display: none;
+  display: none; /* le menu hamburger est caché */
   cursor: pointer;
+  line-height: 100px;
 }
 
 .menu-toggle:after {
   content: "";
   position: absolute;
-  width: 35px;
-  top: 20px;
-  right: 32px;
-  box-shadow: 0 15px 0 1px grey,  0 30px 0 1px grey,  0 45px 0 1px grey;
+  top: 30px;
+  right: 5%;
+  width: 1rem;
+  box-shadow: 0 15px 0 1px grey,  0 20px 0 1px grey,  0 25px 0 1px grey; /* trace le menu hamburger, possible avec svg aussi */
 }
 
-.main {
-  /*hauteur du header*/
-  top: 100px;
+.app-content {
+  top: 100px; /* hauteur du menu */
 }
 
-@media only screen and (max-width: 800px) {
+/* écran dont la largeur < 900 px */
+@media only screen and (max-width: 900px) {
+
+
+  body {
+    overflow-y: hidden; /* pour n'avoir qu'une seule scrollbar */
+  }
+
 
   .wrapper {
     height: 100%;
-    overflow:hidden;
+    overflow: hidden;
   }
+
 
   .header {
-    /* position:static pour permettre au menu de s'afficher en dehors du header fixed*/
+    /* position:static pour permettre au menu de s'afficher en dehors du header fixed */
     position: static;
-    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
   }
 
-  .main {
+  .app-content {
     position: absolute;
-    top: 120px;
+    top: 100px; /* hauteur du menu/ header */
     bottom: 0;
     left: 0;
     right: 0;
     margin-top: 0;
     padding-top: 0;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch; /* Inertie sur iOS */
+    overflow-y: scroll; /* permet de scroller en gardant le menu fixe*/
+    -webkit-overflow-scrolling: touch; /* Inertie iOS */
   }
+
 
   #menu-right {
     /*
@@ -99,45 +105,35 @@
     display: none;
     */
     position: absolute;
+    width: 70%;
     right: 0;
     top: 100px;
     bottom: 0;
     background-color: white;
     /* cacher le menu en le déplacant (*-1) vers la gauche*/
-    transform: translateX(100%);
-    overflow-y: auto;
-    z-index: 10;
-    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-    width: 200px;
+    transform: translateX(100%); /* cacher vers la droite */
+    z-index: 2;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   }
 
   #menu-right a {
     display: block;
-    height: 50px;
-    line-height: 50px;
-    margin-left: 0; margin-right: 0;
-    padding: 12px;
+    height: 70px;
+    line-height: 70px;
     width: 100%;
-    line-height: 50px;
+    margin-left: 0; margin-right: 0;
     text-align: center;
-    -webkit-box-shadow: 0 1px 1px rgba(57, 63, 72, 0.3);
-    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-    box-shadow: 0 1px 1px rgba(57, 63, 72, 0.3);
+    font-size: 0.8em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   }
 
   .menu-toggle {
+    /* position: relative; */
     display: block;
     float: right;
     width: 80px;
     height: 80px;
     margin-right: 10px;
-
   }
 
-  .main {
-    /*hauteur du header*/
-    top: 100px;
-  }
 }

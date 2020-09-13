@@ -1,0 +1,167 @@
+.section-container-footer {
+  width: 90%;
+  margin: auto;
+}
+
+
+.footer {
+  background-color: #a24ff0;
+  flex-shrink: 0;
+  padding-bottom: 40px;
+}
+
+.footer h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 160px;
+  padding-top: 48px;
+  padding-bottom: 52px;
+  border-bottom: solid 2px white;
+}
+
+.footer #form-title  {
+  color: white;
+  margin-bottom: 60px;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
+}
+
+#contact-form {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 60px;
+}
+
+form div {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+#contact-form p {
+  color: white;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.required  {
+  color: red;
+}
+
+form label {
+  display: inline-block;
+  color: white;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+#form-name, #form-email, #form-object, #form-message {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #a24ff0;
+  border-radius: 6px;
+  color: #555;
+  outline: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.form-button {
+  margin-top: 36px;
+}
+
+#form-submit {
+  cursor:pointer;
+  outline: none;
+  background-color: white;
+  padding: 12px;
+  padding-left: 24px; padding-right: 24px;
+  color: #a24ff0;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#form-message {
+  resize: vertical;
+}
+
+#contact-infos {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+#contact-infos svg {
+  height: 45px;
+  width: 15%;
+  fill: white
+}
+
+#contact-infos span {
+  color: white
+}
+
+#contact-map {
+  grid-column: 2;
+  z-index: 0;
+  width: 100%;
+  height: 55%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.contact-grid-left {
+  margin-right: 20px;
+}
+
+.contact-grid-right {
+  margin-left: 20px;
+}
+
+h3 {
+  display: block;
+  color: orange;
+  font-weight: bold;
+}
+
+.contact-infos-adress {
+  margin-left: 12px;margin-right: 12px;
+}
+.contact-infos-phone {
+  margin-left: 12px;
+}
+
+.contact-infos-adress span {
+  font-weight: bold;
+}
+.contact-infos-phone a {
+  font-weight: bold;
+  color: white;
+
+}
+
+@media only screen and (max-width: 900px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+
+  #contact-map {
+    grid-column: 1;
+    height: 500px;
+  }
+
+  #contact-infos {
+    margin-bottom: 42px;
+  }
+
+}
