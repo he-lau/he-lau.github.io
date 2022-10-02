@@ -83,16 +83,12 @@
     /* Rédigez vos propriétés CSS ici */
     .middle {
       position: relative !important;
-      top: 60vh;
+      top: 50vh;
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       margin-bottom: 230px;
     }
-    #home_body {
-      background-color: var(--back_color);
-      overflow-y: auto !important;
-      overflow-x: hidden !important;
-    }
+
 }
 
 @media screen and (max-width: 450px)
@@ -100,9 +96,10 @@
     /* Rédigez vos propriétés CSS ici */
     .middle {
       position: relative !important;
-      top: 120vh;
+      top: 80vh;
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       padding-bottom: 50px;
     }
+
 }
