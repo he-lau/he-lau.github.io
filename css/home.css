@@ -96,7 +96,7 @@
     /* Rédigez vos propriétés CSS ici */
     .middle {
       position: relative !important;
-      top: 80vh;
+      top: 50vh;
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       padding-bottom: 50px;
