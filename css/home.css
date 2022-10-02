@@ -86,9 +86,8 @@
       top: 50vh;
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
-      margin-bottom: 230px;
+      margin-bottom: 300px;
     }
-
 }
 
 @media screen and (max-width: 450px)
@@ -96,10 +95,31 @@
     /* Rédigez vos propriétés CSS ici */
     .middle {
       position: relative !important;
-      top: 50vh;
+      top: 80vh;
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
-      padding-bottom: 50px;
+      margin-bottom: 300px;
     }
+}
 
+@media screen and (max-width: 950px)
+{
+  body, html {
+    overflow-x: hidden !important;
+  }
+  body {
+    overflow-y: hidden !important;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 450px)
+{
+  body, html {
+    overflow-x: hidden !important;
+  }
+  body {
+    overflow-y: hidden !important;
+    position: relative;
+  }
 }
