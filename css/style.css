@@ -55,6 +55,7 @@ nav {
 {
     html, body {
       overflow-x: hidden;
+      overflow-y: scroll !important;
     }
     body {
       position: relative
@@ -65,6 +66,7 @@ nav {
 {
     html, body {
       overflow-x: hidden;
+      overflow-y: scroll !important;
     }
     body {
       position: relative
