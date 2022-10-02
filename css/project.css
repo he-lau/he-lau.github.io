@@ -1,0 +1,111 @@
+#project_body {
+  background-color: var(--back_color);
+  overflow-x: hidden !important;
+}
+
+.carousel-control-next,
+.carousel-indicators,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+.blob_3 {
+  top: 900px;
+  left: -20px;
+  position: absolute;
+  width: 60vh;
+  height: 40vh;
+  background: orange;
+  border-radius: 49% 51% 49% 51% / 36% 27% 73% 64% ;
+}
+
+.blob_5 {
+  top: 1800px;
+  left: -20px;
+  position: absolute;
+  width: 100vh;
+  height: 60vh;
+  background: green;
+  border-radius: 49% 51% 49% 51% / 36% 27% 73% 64% ;
+}
+
+.blob_4 {
+  bottom: -1100px;
+  right: -80px;
+  position: absolute;
+  width: 80vh;
+  height: 60vh;
+  background: blue;
+  border-radius: 49% 51% 49% 51% / 36% 27% 73% 64% ;
+}
+
+.projet {
+  margin-top: 15vh;
+}
+
+.projet h2 {
+  margin-bottom: 12px !important;
+}
+
+.projet_item {
+  padding: 32px !important;
+}
+
+.projet_item img {
+  object-fit: contain !important;
+  height: 300px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.projet_item a {
+  text-decoration: underline;
+  color: var(--text_color);
+}
+
+.projet_item a:hover {
+  color: var(--text_color);
+}
+
+.container1 {
+  margin-bottom: 4vh
+}
+
+.container2 {
+  margin-bottom: 4vh
+}
+
+.projet1 {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+.projet1 img {
+  object-fit: fill !important;
+  min-height: 300px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.projet2 {
+  background-color: rgba(0, 255, 0, 0.4);
+}
+
+.projet3 {
+  background-color: rgba(0, 0, 255, 0.4)
+ }
+
+.projet4 {
+  background-color: rgba(255, 127, 0, 0.4)
+ }
+
+.projet5 {
+  background-color: rgba(128, 0, 128, 0.4)
+ }
+
+.projet6 {
+  background-color: rgba(128, 45, 255, 0.4)
+ }
+
+.projet7 {
+
+ }

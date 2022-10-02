@@ -1,0 +1,52 @@
+:root {
+  --back_color: #121212;
+  --text_color: #edebeb;
+  --cursor_anim_color: #ffff05
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Sora', sans-serif;
+  font-weight: 800 !important;
+  color: var(--text_color);
+}
+
+nav {
+  height: 10vh;
+  font-size: 1.6em !important;
+  text-decoration: overline 4px;
+  margin-bottom: 10vh;
+}
+
+.navbar-brand {
+    font-size: 1em !important;
+}
+
+#mouse_animation_text {
+  position: absolute;
+  color: black;
+  font-size: 1.5em;
+  user-select: none;
+  pointer-events: none;
+  animation: around 10s linear infinite;
+  z-index: 10;
+}
+
+#mouse_animation_text span {
+  color: var(--cursor_anim_color);
+  position: absolute;
+  text-transform: uppercase;
+  display: inline-block;
+  transform-origin: 0px 50px;
+  bottom: -30px;
+}
+
+@keyframes around {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
