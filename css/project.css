@@ -110,13 +110,17 @@
 
  }
 
- @media screen and (max-width: 950px)
+ @media screen and (max-width: 995px)
  {
    body, html {
      overflow-x: hidden !important;
    }
    body {
      overflow-y: hidden !important;
+   }
+   .projet {
+     margin-top: 200px;
+     margin-bottom: 300px;
    }
  }
 
@@ -127,5 +131,9 @@
    }
    body {
      overflow-y: hidden !important;
+   }
+   .projet {
+     margin-top: 200px;
+     margin-bottom: 300px;
    }
  }
