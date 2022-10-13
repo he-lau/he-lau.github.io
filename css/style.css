@@ -1,5 +1,5 @@
 :root {
-  --back_color: #121212;
+  --back_color: #161830;
   --text_color: #edebeb;
   --cursor_anim_color: #ffff05
 }
@@ -9,7 +9,7 @@
   padding: 0;
   font-family: 'Sora', sans-serif;
   font-weight: 800 !important;
-  color: var(--text_color) !important;
+  color: var(--text_color) !important;  
 }
 
 nav {
