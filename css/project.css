@@ -86,6 +86,14 @@
   margin-bottom: 4vh
 }
 
+.stage_quote {
+  color: yellow !important;
+}
+
+.stage_quote::before {
+  content: "#stage" !important
+}
+
 .projet1 img {
   object-fit: fill !important;
   min-height: 300px;
