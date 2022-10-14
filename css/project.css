@@ -78,6 +78,10 @@
   color: var(--text_color);
 }
 
+.projet_item ul {
+  margin-left: 8px;
+}
+
 .container1 {
   margin-bottom: 4vh
 }
