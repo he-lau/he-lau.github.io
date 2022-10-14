@@ -71,7 +71,7 @@
     transform: scale(1) translate(0);
   }
   60% {
-    transform: scale(.6,1.2) translate(1.2vw,3vh) rotate(210deg);
+    transform: scale(1.5,1.5) translate(1.2vw,3vh) rotate(210deg);
   }
   100% {
     transform: scale(1) translate(0) rotate(1turn);
