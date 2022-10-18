@@ -78,6 +78,23 @@
   }
 }
 
+
+.exclamation {
+  display: inline-block;
+  animation: 0.8s shake infinite alternate;
+  -webkit-animation: 0.8s shake infinite alternate;
+  -moz-animation: 0.8s shake infinite alternate;
+}
+
+@keyframes shake {
+  0% { transform: skewX(-15deg); }
+  5% { transform: skewX(15deg); }
+  10% { transform: skewX(-15deg); }
+  15% { transform: skewX(15deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }
+}
+
 @media screen and (max-width: 995px)
 {
     /* Rédigez vos propriétés CSS ici */

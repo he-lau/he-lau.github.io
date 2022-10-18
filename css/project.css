@@ -6,7 +6,22 @@
 .carousel-control-next,
 .carousel-indicators,
 .carousel-control-prev /*, .carousel-indicators */ {
-    filter: invert(100%);
+  fill: orange
+}
+
+
+.carousel-indicators li {
+  border-radius: 1rem;
+  width: 35px !important;
+  height: 8px !important;
+}
+
+.carousel-indicators {
+  top: 327px
+}
+
+.carousel-indicators:hover {
+  cursor: pointer;
 }
 
 .blob_3 {
@@ -51,6 +66,10 @@
 
 .projet_item:hover {
   box-shadow: 0px -5px 10px 0px rgba(255, 255, 255, 0.5);
+}
+
+.projet_item img:hover {
+
 }
 
 .projet h2 {
