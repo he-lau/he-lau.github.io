@@ -77,6 +77,15 @@ hr {
   animation: slide-in-right 1s ease-in-out both;
 }
 
+#toTopBtn {
+    position: fixed;
+    bottom: 26px;
+    right: 39px;
+    z-index: 98;
+    padding: 21px;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(255, 255, 255) 0px 0px 0px 3px !important;
+}
 
 @keyframes slide-in-left {
   0% {
