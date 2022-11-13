@@ -129,6 +129,11 @@
     overflow-y: hidden !important;
     position: relative;
   }
+  .home {
+    width: 90% !important;
+    margin: auto;
+    position: relative;
+  }
 }
 
 @media screen and (max-width: 450px)
@@ -138,6 +143,11 @@
   }
   body {
     overflow-y: hidden !important;
+    position: relative;
+  }
+  .home {
+    width: 90% !important;
+    margin: auto;
     position: relative;
   }
 }

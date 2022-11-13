@@ -4,29 +4,29 @@
 }
 
 
-/* Agenda - timeline*/
+/* formation - timeline*/
 
-#agenda {
+#formation {
   margin-top: 120px;
   padding-bottom: 80px;
   width: 80%;
   margin: auto;
 }
 
-#agenda h1 {
+#formation h1 {
   margin-bottom: 80px;
 }
 
-#agenda h3 {
+#formation h3 {
   color: yellow !important
 }
 
-#agenda ul {
+#formation ul {
   list-style: disc;
   margin-left: 8px
 }
 
-#agenda .card {
+#formation .card {
   border: none;
   margin-top: 14px;
   background: transparent;
@@ -143,4 +143,37 @@ hr {
     to {
       background-position: 200% center;
     }
-  }fff
+  }
+
+  @media screen and (max-width: 995px)
+  {
+    body, html {
+      overflow-x: hidden !important;
+    }
+    body {
+      overflow-y: hidden !important;
+    }
+    #formation {
+      width: 90%;
+      margin: auto;
+      margin-top: 200px;
+      margin-bottom: 300px;
+
+    }
+  }
+
+  @media screen and (max-width: 450px)
+  {
+    body, html {
+      overflow-x: hidden !important;
+    }
+    body {
+      overflow-y: hidden !important;
+    }
+    #formation {
+      width: 90%;
+      margin: auto;
+      margin-top: 200px;
+      margin-bottom: 300px;
+    }
+  }

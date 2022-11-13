@@ -264,6 +264,8 @@
      overflow-y: hidden !important;
    }
    .projet {
+     width: 90%;
+     margin: auto;
      margin-top: 200px;
      margin-bottom: 300px;
    }
@@ -278,6 +280,8 @@
      overflow-y: hidden !important;
    }
    .projet {
+     width: 90%;
+     margin: auto;
      margin-top: 200px;
      margin-bottom: 300px;
    }
