@@ -63,6 +63,7 @@
 }
 
 .blob {
+  z-index: -1;
   animation: blob 10s ease-in-out infinite;
 }
 
